@@ -1,0 +1,179 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Google Sans, arial, sans-serif-medium, sans-serif;
+  line-height: 1.4;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 7px;
+  font-size: 13px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  float: right;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+.grid {
+  height: 23px;
+  position: relative;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.content {
+  /* margin: 0 auto;
+  width: 575px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  margin-bottom: 28px;
+}
+
+.bar {
+  margin: 0 auto;
+  width: 580px;
+  border-radius: 30px;
+  border: 1px solid #dcdcdc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bar:hover {
+  box-shadow: 1px 1px 4px 1px #dcdcdc;
+}
+
+.searchbar {
+  border: none;
+  width: 500px;
+  outline: none;
+  height: 40px;
+  font-size: 16px;
+  margin: 0 auto;
+  display: block;
+}
+
+.search-icon {
+  width: 25px;
+  height: 25px;
+  margin-left: 15px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons .button {
+  background-color: #f8f8f8; /* Green */
+  border: 1px solid #f8f8f8;
+  color: rgb(70, 69, 69);
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 11px 20px;
+  margin: 4px;
+}
+
+.buttons .button:hover {
+  border: 1px solid #dbdbdb;
+  border-radius: 7%;
+}
+
+.lang {
+  margin-top: 20px;
+  font-size: 13px;
+  color: rgb(70, 69, 69);
+  font-family: Arial, sans-serif;
+}
+
+.language {
+  text-decoration: none;
+  color: blue;
+}
+
+.footer {
+  list-style-type: none;
+  flex-shrink: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 2px;
+  background-color: #f3f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.left-footer {
+  display: flex;
+}
+
+.right-footer {
+  display: flex;
+  margin-right: 30px;
+}
+
+.footer-link {
+  display: block;
+  padding: 10px 0 10px 30px;
+  color: gray;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 880px) {
+  .bar {
+    width: 80%;
+  }
+
+  .searchbar {
+    width: 80%;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer-link {
+    padding: 8px;
+  }
+}
